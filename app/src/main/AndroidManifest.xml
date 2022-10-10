@@ -10,11 +10,21 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Student_Subject_Data">
-        <activity android:name=".LoginActivity"
+        <activity
+            android:name=".BatchmatesActivity"
+            android:exported="true"
+            android:label="Your Batchmates"/>
+        <activity
+            android:name=".SubjectsActivity"
+            android:exported="true"
+            android:label="Your Subjects"/>
+        <activity
+            android:name=".LoginActivity"
             android:exported="true"
             android:label="Student Subject Manager">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
