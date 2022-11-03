@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E5E5E5"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/crtregno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#17255A"
+        android:ems="15"
+        android:hint="@string/registration_number"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:textColor="#17255A"
+        android:textColorHint="#17255A"
+        app:layout_constraintBottom_toTopOf="@id/crtpassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:importantForAutofill="no" />
+
+    <EditText
+        android:id="@+id/crtpassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#17255A"
+        android:ems="15"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        android:minHeight="48dp"
+        android:textColor="#17255A"
+        android:textColorHint="#17255A"
+        app:layout_constraintBottom_toTopOf="@id/crtsub1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/crtregno"
+        android:importantForAutofill="no" />
+
+    <EditText
+        android:id="@+id/crtsub1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#17255A"
+        android:ems="15"
+        android:hint="Subject 1"
+        android:inputType="textPassword"
+        android:minHeight="48dp"
+        android:textColor="#17255A"
+        android:textColorHint="#17255A"
+        app:layout_constraintBottom_toTopOf="@id/crtsub2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/crtpassword"
+        android:importantForAutofill="no" />
+
+    <EditText
+        android:id="@+id/crtsub2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#17255A"
+        android:ems="15"
+        android:hint="Subject 2"
+        android:inputType="textPassword"
+        android:minHeight="48dp"
+        android:textColor="#17255A"
+        android:textColorHint="#17255A"
+        app:layout_constraintBottom_toTopOf="@id/crtsub3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/crtsub1"
+        android:importantForAutofill="no" />
+
+    <EditText
+        android:id="@+id/crtsub3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#17255A"
+        android:ems="15"
+        android:hint="Subject 3"
+        android:inputType="textPassword"
+        android:minHeight="48dp"
+        android:textColor="#17255A"
+        android:textColorHint="#17255A"
+        app:layout_constraintBottom_toTopOf="@id/crtbutton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/crtsub2"
+        android:importantForAutofill="no" />
+
+    <Button
+        android:id="@+id/crtbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/register"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/password" />
+</androidx.constraintlayout.widget.ConstraintLayout>
